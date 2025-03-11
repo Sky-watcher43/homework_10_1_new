@@ -1,18 +1,15 @@
-from masks import get_mask_account
-
-from masks import get_mask_card_number
-
 from datetime import datetime
 
+from src.masks import get_mask_account, get_mask_card_number
 
-card_account = input.lower()
-date = input.lower()
+card_account = input().lower()
+date = input().lower()
 """Получаем данные от пользователя"""
 
 
 def mask_account_card(card_account: str) -> str:
     """Обрабатывает информацию о картах и о счетах"""
-    if "счет" in card_account() or "счёт" in card_account():
+    if "счет" in card_account or "счёт" in card_account:
         if card_account[-20:].isdigit():
             number_account = card_account[-20:]
             masked_account = get_mask_account(number_account)
@@ -22,6 +19,7 @@ def mask_account_card(card_account: str) -> str:
             number_card = card_account[-16:]
             masked_card = get_mask_card_number(number_card)
             return f"{card_account[:-16]} {masked_card}"
+    return''
 
 
 result = mask_account_card(card_account)
