@@ -10,7 +10,8 @@
 https://github.com/Sky-watcher43/homework_10_1_new.git
 ```
 + Установите зависимости:
-```poetry install
+```
+poetry install
 ```
 ## Использование:
 Запустите модуль src/processing.py, в качестве аргументов функций подставляя данные, состоящие из даты и статуса операции. 
