@@ -25,9 +25,11 @@ def filter_state():
         {"id": 615064591, "state": "CANCELED", "date": "2018-10-14T08:21:33.419441"},
     ]
 
+
 @pytest.fixture
 def filter_state_empty():
     return []
+
 
 @pytest.fixture
 def input_date():
