@@ -32,6 +32,10 @@ no_implicit_optional = true
 warn_return_any = true
 exclude = 'venv'
 
+[[tool.mypy.overrides]]
+module = ["tests.*"]
+disallow_untyped_defs = false
+
 [tool.black]
 line-length = 119
 exclude = '''

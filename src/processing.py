@@ -1,7 +1,7 @@
-from typing import Dict, List, Any
+from typing import Any, Dict, List
 
 
-def filter_by_state(my_list: list[dict], state: str = 'EXECUTED') -> list[dict]:
+def filter_by_state(my_list: list[dict], state: str = "EXECUTED") -> list[dict]:
     """Принимает список словарей и возвращает новый список словарей
     со словарями. у которых ключ соответствует заданному значению"""
     new_list = []

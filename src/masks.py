@@ -17,6 +17,3 @@ def get_mask_account(account_number: Union[int, str]) -> Union[str]:
     if len(account_number) == length_acc_number:
         return f"**{account_number[-4:]}"
     return ""
-
-
-
